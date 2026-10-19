@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medica | تحويل محاضرات الجامعة إلى كتب مذاكرة منظمة علمياً</title>
+  <meta name="description" content="🔥 عرض خاص لفترة محدودة: 1 جنيه فقط لكل سلايد! بدلاً من 2 جنيه. حوّل محاضرات الجامعة المبعثرة إلى كتب مذاكرة احترافية منظمة علمياً." />
+  <meta name="theme-color" content="#1E3A8A" />
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Medica | تحويل المحاضرات إلى كتب مذاكرة منظمة علمياً" />
+  <meta property="og:description" content="🔥 عرض خاص لفترة محدودة: 1 جنيه فقط لكل سلايد! بدلاً من 2 جنيه. حوّل محاضرات الجامعة المبعثرة إلى كتب مذاكرة احترافية منظمة علمياً." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ar_EG" />
+  <meta property="og:image" content="C:\Users\g\Downloads\Med/logo.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Brand Favicon from Uploaded Logo -->
+  <link rel="icon" type="image/jpeg" href="C:\Users\g\Downloads\Med/logo.jpg" />
+  <link rel="apple-touch-icon" href="C:\Users\g\Downloads\Med/logo.jpg" />
+
+  <!-- Google Fonts: Cairo, Tajawal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- forms.app Embed Script -->
+  <script src="https://forms.app/static/embed.js" type="text/javascript" async defer></script>
+
+  <style>
+    :root {
+      --color-primary: #1E3A8A;
+      --color-primary-light: #2563EB;
+      --color-primary-dark: #0F172A;
+      --color-accent: #0284C7;
+      --color-promo: #DC2626;
+      --color-vodafone: #E11D48;
+      --color-bg-body: #F8FAFC;
+      --color-bg-card: #FFFFFF;
+      --color-text-title: #0F172A;
+      --color-text-body: #334155;
+      --color-text-muted: #64748B;
+      --border-subtle: 1px solid rgba(226, 232, 240, 0.9);
+      --border-focus: 1px solid rgba(37, 99, 235, 0.3);
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 10px 30px -10px rgba(15, 23, 42, 0.08);
+      --shadow-lg: 0 20px 40px -15px rgba(15, 23, 42, 0.12);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --font-display: 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-body: 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --max-width: 980px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text-body);
+      background-color: var(--color-bg-body);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.04) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(2, 132, 199, 0.04) 0px, transparent 50%);
+      line-height: 1.7;
+      direction: rtl;
+      text-align: right;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Webapp Topbar */
+    .webapp-topbar {
+      background: #FFFFFF;
+      border-bottom: var(--border-subtle);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.95);
+    }
+    .webapp-topbar__inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .brand-mark {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .brand-mark__logo-img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(30, 58, 138, 0.15);
+      border: 2px solid #38BDF8;
+      display: block;
+      flex-shrink: 0;
+      background: #FFFFFF;
+    }
+    .brand-mark__title {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.3rem;
+      color: var(--color-text-title);
+      line-height: 1.1;
+    }
+    .brand-mark__badge {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+    }
+    .topbar-status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #DC2626;
+      background: #FEF2F2;
+      padding: 4px 12px;
+      border-radius: 6px;
+      border: 1px solid #FECACA;
+    }
+
+    /* Main Container */
+    .webapp-main {
+      flex: 1;
+      max-width: var(--max-width);
+      width: 100%;
+      margin: 0 auto;
+      padding: 32px 20px 60px 20px;
+    }
+
+    /* Hero / Intro Card */
+    .webapp-hero {
+      background: #FFFFFF;
+      border: var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 36px 36px 32px 36px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+    .webapp-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #DC2626 0%, #EA580C 50%, #2563EB 100%);
+    }
+
+    /* Special Offer Strip */
+    .promo-strip {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .promo-highlight {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #FEF2F2;
+      color: #DC2626;
+      border: 1px solid #FECACA;
+      padding: 6px 14px;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 0.95rem;
+    }
+    .old-price {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--color-text-muted);
+      text-decoration: line-through;
+    }
+
+    /* Hero Headline */
+    .webapp-hero__headline {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3.2vw, 2.3rem);
+      font-weight: 900;
+      color: var(--color-text-title);
+      line-height: 1.35;
+      margin-bottom: 18px;
+      letter-spacing: -0.01em;
+    }
+
+    /* Hero Description */
+    .webapp-hero__description {
+      font-size: 1.08rem;
+      line-height: 1.85;
+      color: var(--color-text-body);
+      font-weight: 500;
+      max-width: 860px;
+    }
+
+    /* Payment & Pricing Section (Placed directly before form) */
+    .webapp-pricing-payment {
+      background: #FFFFFF;
+      border: var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 30px 36px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+    }
+    .pricing-banner {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #E2E8F0;
+      margin-bottom: 22px;
+    }
+    .pricing-banner__main {
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 2.8vw, 2.05rem);
+      font-weight: 900;
+      color: var(--color-text-title);
+      line-height: 1.3;
+    }
+    .pricing-banner__highlight {
+      color: #DC2626;
+      display: inline;
+    }
+    .pricing-banner__old {
+      color: #94A3B8;
+      font-size: 1.15rem;
+      font-weight: 700;
+      text-decoration: line-through;
+      margin-right: 8px;
+    }
+    .pricing-banner__badge {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #047857;
+      background: #ECFDF5;
+      padding: 6px 14px;
+      border-radius: 8px;
+      border: 1px solid #A7F3D0;
+    }
+
+    .payment-subheading {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--color-text-muted);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .payment-single-container {
+      width: 100%;
+    }
+    .payment-card {
+      background: #F8FAFC;
+      border: 1.5px solid #E2E8F0;
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      transition: all 0.2s ease;
+    }
+    .payment-card:hover {
+      border-color: #E11D48;
+      background: #FFF1F2;
+      box-shadow: var(--shadow-sm);
+    }
+    .payment-card__info {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .payment-card__badge-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .vodafone-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: #E11D48;
+      background: #FFE4E6;
+      padding: 4px 12px;
+      border-radius: 6px;
+      border: 1px solid #FECDD3;
+    }
+    .payment-card__number {
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 2.5vw, 1.75rem);
+      font-weight: 900;
+      color: var(--color-text-title);
+      letter-spacing: 0.05em;
+      direction: ltr;
+      text-align: right;
+    }
+    .payment-card__hint {
+      font-size: 0.84rem;
+      color: var(--color-text-muted);
+      font-weight: 500;
+    }
+    .copy-btn {
+      background: #FFFFFF;
+      border: 1px solid #CBD5E1;
+      color: var(--color-primary-light);
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .copy-btn:hover {
+      background: #E11D48;
+      border-color: #E11D48;
+      color: #FFFFFF;
+    }
+    .copy-btn.copied {
+      background: #059669;
+      border-color: #059669;
+      color: #FFFFFF;
+    }
+
+    /* Embedded Form Container */
+    .webapp-form-container {
+      background: #FFFFFF;
+      border: var(--border-subtle);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+    }
+    .webapp-form-header {
+      background: #F8FAFC;
+      border-bottom: var(--border-subtle);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .webapp-form-title {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: var(--color-text-title);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .webapp-form-title svg {
+      color: var(--color-primary-light);
+    }
+    .webapp-form-secure {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Form Frame */
+    .webapp-form-body {
+      padding: 8px;
+      background: #FFFFFF;
+      min-height: 850px;
+      position: relative;
+    }
+    .formsapp-iframe {
+      width: 100%;
+      height: 920px;
+      border: none;
+      border-radius: var(--radius-md);
+      display: block;
+      background: #FFFFFF;
+    }
+
+    /* Form Footer Fallback & Direct Link */
+    .webapp-form-footer {
+      padding: 16px 24px;
+      background: #F8FAFC;
+      border-top: var(--border-subtle);
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+    .webapp-form-footer a {
+      color: var(--color-primary-light);
+      font-weight: 700;
+      text-decoration: underline;
+      margin-right: 4px;
+      transition: color 0.15s ease;
+    }
+    .webapp-form-footer a:hover {
+      color: var(--color-primary);
+    }
+
+    /* Minimal App Footer */
+    .webapp-footer {
+      border-top: var(--border-subtle);
+      background: #FFFFFF;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.84rem;
+      color: var(--color-text-muted);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 640px) {
+      .webapp-main { padding: 20px 14px 40px 14px; }
+      .webapp-hero { padding: 24px 20px 22px 20px; }
+      .webapp-hero__headline { font-size: 1.45rem; line-height: 1.4; }
+      .webapp-hero__description { font-size: 0.98rem; line-height: 1.75; }
+      .webapp-pricing-payment { padding: 22px 18px; }
+      .pricing-banner__main { font-size: 1.3rem; }
+      .payment-card { padding: 16px; }
+      .payment-card__number { font-size: 1.35rem; }
+      .copy-btn { width: 100%; justify-content: center; }
+      .webapp-form-body { padding: 4px; }
+      .formsapp-iframe { height: 960px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Webapp Top Bar -->
+  <header class="webapp-topbar">
+    <div class="webapp-topbar__inner">
+      <div class="brand-mark">
+        <img src="C:\Users\g\Downloads\Med/logo.jpg" alt="شعار Medica" class="brand-mark__logo-img" />
+        <div>
+          <div class="brand-mark__title">Medica</div>
+          <div class="brand-mark__badge">تنسيق المحاضرات وكتب المذاكرة</div>
+        </div>
+      </div>
+      <div class="topbar-status">
+        <span>العرض ساري الآن</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Webapp Main Area -->
+  <main class="webapp-main">
+
+    <!-- The exact requested Hero Section -->
+    <section class="webapp-hero">
+      <div class="promo-strip">
+        <span class="promo-highlight">🔥 عرض خاص لفترة محدودة: 1 جنيه فقط لكل سلايد!</span>
+        <span class="old-price">بدلاً من 2 جنيه</span>
+      </div>
+
+      <h1 class="webapp-hero__headline">
+        حوّل محاضرات الجامعة المبعثرة إلى كتب مذاكرة احترافية منظمة علمياً
+      </h1>
+
+      <p class="webapp-hero__description">
+        لسنا مجرد خدمة تنسيق شكلية؛ نحن نقوم بإعادة هيكلة علمية شاملة لملفات PowerPoint و PDF لتسهيل الفهم والمذاكرة والمراجعة مع جداول مقارنة ذكية ورسوم توضيحية مدمجة، وإخراج PDF جاهز للطباعة فوراً.
+      </p>
+    </section>
+
+    <!-- Payment & Pricing Section (Placed directly before form) -->
+    <section class="webapp-pricing-payment">
+      <div class="pricing-banner">
+        <div class="pricing-banner__main">
+          السعر: <span class="pricing-banner__highlight">1 جنيه للسلايد</span> <span class="pricing-banner__old">بدلاً من 2 جنيه</span>
+        </div>
+        <div class="pricing-banner__badge">
+          عرض خاص لفترة محدودة
+        </div>
+      </div>
+
+      <div class="payment-subheading">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+          <line x1="1" y1="10" x2="23" y2="10"></line>
+        </svg>
+        <span>وسيلة الدفع المعتمدة:</span>
+      </div>
+
+      <div class="payment-single-container">
+        <!-- Vodafone Cash Card -->
+        <div class="payment-card">
+          <div class="payment-card__info">
+            <div class="payment-card__badge-row">
+              <span class="vodafone-badge">فودافون كاش (Vodafone Cash)</span>
+            </div>
+            <span class="payment-card__number" id="num-vodafone">01098898531</span>
+            <span class="payment-card__hint">يتم تحويل الرسوم على هذا الرقم عند إرسال المحاضرة</span>
+          </div>
+          <button
+            type="button"
+            class="copy-btn"
+            onclick="copyNumber(this, '01098898531')"
+            aria-label="نسخ رقم فودافون كاش"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>نسخ الرقم</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Form (Immediately follows Payment Section) -->
+    <section class="webapp-form-container">
+      <div class="webapp-form-header">
+        <div class="webapp-form-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="12" y1="18" x2="12" y2="12"></line>
+            <line x1="9" y1="15" x2="15" y2="15"></line>
+          </svg>
+          <span>نموذج طلب وتنسيق المحاضرات</span>
+        </div>
+        <div class="webapp-form-secure">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          <span>إرسال مباشر ومشفر للملفات</span>
+        </div>
+      </div>
+
+      <div class="webapp-form-body">
+        <!-- forms.app Embed iFrame -->
+        <iframe
+          class="formsapp-iframe"
+          src="https://response.forms.app/form/6acf30b767fb325c09dc2615"
+          loading="lazy"
+          title="نموذج طلب وتنسيق المحاضرات - Medica"
+          allow="camera; microphone; autoplay; encrypted-media; fullscreen"
+        ></iframe>
+      </div>
+
+      <div class="webapp-form-footer">
+        <span>إذا واجهت أي مشكلة في تحميل النموذج، يمكنك </span>
+        <a
+          href="https://response.forms.app/form/6acf30b767fb325c09dc2615"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          فتحه مباشرة في نافذة مستقلة ↗
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Clean Webapp Footer -->
+  <footer class="webapp-footer">
+    <p>© 2026 Medica — خدمة الهيكلة والتنسيق العلمي للمحاضرات الجامعية. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <!-- Script for quick clipboard copy -->
+  <script>
+    function copyNumber(btn, text) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function() {
+          showCopied(btn);
+        }).catch(function() {
+          fallbackCopy(btn, text);
+        });
+      } else {
+        fallbackCopy(btn, text);
+      }
+    }
+
+    function fallbackCopy(btn, text) {
+      var textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.style.position = 'fixed';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
+        document.execCommand('copy');
+        showCopied(btn);
+      } catch (err) {
+        console.error('Copy failed', err);
+      }
+      document.body.removeChild(textarea);
+    }
+
+    function showCopied(btn) {
+      var originalHTML = btn.innerHTML;
+      btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>تم النسخ ✓</span>';
+      btn.classList.add('copied');
+      setTimeout(function() {
+        btn.innerHTML = originalHTML;
+        btn.classList.remove('copied');
+      }, 2000);
+    }
+  </script>
+
+</body>
+</html>
